@@ -1,4 +1,4 @@
 <%# app/views/shared/_flash.html.erb %>
-<div class="flash" <%= tag.attributes(hidden: notice.blank?) %>>
+<div class="flash" <%= "hidden" if notice.blank? %>>
   <%= notice %>
 </div>
