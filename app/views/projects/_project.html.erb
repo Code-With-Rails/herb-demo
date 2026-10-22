@@ -1,0 +1,11 @@
+<%# app/views/projects/_project.html.erb %>
+<li class="project">
+  <div class="project-header">
+    <h2><%= project.name %></h2>
+    <%= render "shared/status_badge", status: project.status %>
+  </div>
+
+  <% if project.archived %>
+    <p class="muted">Archived</p>
+  <% end %>
+</li>
